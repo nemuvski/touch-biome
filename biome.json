@@ -27,7 +27,7 @@
   },
   "formatter": {
     "enabled": true,
-    "ignore": ["dist/", ".vscode/"],
+    "ignore": ["dist/"],
     "lineEnding": "lf",
     "lineWidth": 120,
     "indentStyle": "space",
@@ -41,5 +41,16 @@
       "jsxQuoteStyle": "single",
       "arrowParentheses": "always"
     }
-  }
+  },
+  "overrides": [
+    {
+      "include": [".vscode/**"],
+      "json": {
+        "parser": {
+          "allowComments": true,
+          "allowTrailingCommas": true
+        }
+      }
+    }
+  ]
 }
