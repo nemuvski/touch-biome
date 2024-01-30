@@ -7,7 +7,22 @@
     "enabled": true,
     "ignore": ["dist/"],
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "correctness": {
+        "useExhaustiveDependencies": "warn",
+        "noUnusedVariables": "warn"
+      },
+      "style": {
+        "noDefaultExport": "off"
+      },
+      "nursery": {
+        "useExportType": "error",
+        "useImportType": "error",
+        "noUnusedImports": "warn",
+        "noGlobalEval": "error",
+        "noGlobalAssign": "error",
+        "useNodejsImportProtocol": "warn"
+      }
     }
   },
   "formatter": {
