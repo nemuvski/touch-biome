@@ -10,24 +10,26 @@
       "recommended": true,
       "correctness": {
         "useExhaustiveDependencies": "warn",
+        "noUnusedImports": "warn",
         "noUnusedVariables": "warn"
       },
       "style": {
-        "noDefaultExport": "off"
-      },
-      "nursery": {
-        "useExportType": "error",
         "useImportType": "error",
-        "noUnusedImports": "warn",
-        "noGlobalEval": "error",
-        "noGlobalAssign": "error",
+        "useExportType": "error",
+        "noDefaultExport": "off",
         "useNodejsImportProtocol": "warn"
+      },
+      "security": {
+        "noGlobalEval": "error"
+      },
+      "suspicious": {
+        "noGlobalAssign": "error"
       }
     }
   },
   "formatter": {
     "enabled": true,
-    "ignore": ["dist/"],
+    "ignore": ["dist/", "package.json"],
     "lineEnding": "lf",
     "lineWidth": 120,
     "indentStyle": "space",
